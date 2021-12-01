@@ -1,0 +1,76 @@
+<form>
+  <label class="medida">Medida</label>
+    <input type="number" placeholder="Ancho en cm" min="1"></input>
+
+    <div class="container">
+                <table class="table table-bordered">
+                  <thead>
+                    <tr class="columnas-estilo">
+                      <th>Col1</th>
+                      <th></th>
+                      <th>Col2</th>
+                      <th></th>
+                      <th>Col3</th>
+                      <th></th>
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="input-style">
+                      <td class="table-active">Americano <sup>1</sup> <td class="input-style table-active"><input class="tabla-modelos" type="radio" name="modelos" id="americano"></input></td></td>
+                      <td class="table-active">Presilla <td class="input-style table-active"><input class="tabla-modelos" type="radio" name="modelos" id="presilla"></input></td></td>
+                      <td class="table-active">Tablas Chatas <td class="input-style table-active"><input class="tabla-modelos" type="radio" name="modelos" id="tablas_chatas"></input></td></td>
+                    </tr>
+                    <tr>
+                      <td class="table-light">Americano  <sup>2</sup> <td class="input-style table-light"><input class="tabla-modelos" type="radio" name="modelos" id="americano2"></input></td></td>
+                      <td class="table-light">Plisado <td class="input-style table-light"><input class="tabla-modelos" type="radio" name="modelos" id="plisado"></input></td></td>
+                      <td class="table-light">Tablas Doble Chatas <td class="input-style table-light"><input class="tabla-modelos" type="radio" name="modelos" id="tablas_chatas-doble"></input></td></td>
+                    </tr>
+                    <tr>
+                      <td class="table-active">Americano <sup>2.5</sup> <td class="input-style table-active"><input class="tabla-modelos" type="radio" name="modelos" id="americano2_5"></input></td></td>
+                      <td class="table-active">Vanesa Simple <td class="input-style table-active"><input class="tabla-modelos" type="radio" name="modelos" id="vanesa"></input></td></td>
+                      <td class="table-active">XXXXXXXX <td class="input-style table-active"><input class="tabla-modelos" disabled type="radio"></input></td></td>
+                    </tr>
+                    <tr>
+                        <td class="table-light">Americano <sup>3</sup><td class="input-style table-light"><input class="tabla-modelos" type="radio" name="modelos" id="americano3"></input></td></td>
+                        <td class="table-light">Vanesa Doble<td class="input-style table-light"><input class="tabla-modelos" type="radio" name="modelos" id="vanesa_doble"></input></td></td>
+                        <td class="table-light">XXXXXXXX<td class="input-style table-light"><input class="tabla-modelos" disabled type="radio"></input></td></td>
+                      </tr>
+                  </tbody>
+                </table>
+              </div>
+  <label class="modelos">Modelos</label>
+
+    <label>Modelo 1</label>
+      <input class="radioM" name="modelo#"id="Modelo#" type="radio"></input>
+
+    <label>Modelo 2</label>
+      <input class="radioM" name="modelo#"id="Modelo#" type="radio"></input>
+
+    <label>Modelo 3</label>
+      <input class="radioM" name="modelo#"id="Modelo#" type="radio"></input>
+
+    <label>Modelo 4</label>
+      <input class="radioM" name="modelo#"id="Modelo#" type="radio"></input>
+
+    <label>Modelo 5</label>
+      <input class="radioM" name="modelo#"id="Modelo#" type="radio"></input>
+
+    <label>Modelo 6</label>
+      <input class="radioM" name="modelo#"id="Modelo#" type="radio"></input>
+
+    <label>Modelo 7</label>
+      <input class="radioM" name="modelo#"id="Modelo#" type="radio"></input>
+
+    <label>Modelo 8</label>
+      <input class="radioM" name="modelo#"id="Modelo#" type="radio"></input>
+
+    <label htmlFor="prepañ">Precio de un solo paño</label>
+      <input type="number" name="prepañ" id="" placeholder="Precio de un paño"></input>
+
+    <label htmlFor="pretel">Precio tela</label>
+      <input type="number" name="pretel" id="" placeholder="Precio de tela"></input>
+
+      <button type="button" onclick="ShowData()" class="btn"> Calcular </button>
+      <input type="reset" value="Borrar" class="btn"></input>
+</form>
