@@ -1,4 +1,8 @@
-const total = 123;
+const CantTela =null;
+const ModeloE = null;
+const CantPañ = null;
+const Confecc = null;
+const Total = null;
 
 const Table = props => {
   return (
@@ -7,20 +11,24 @@ const Table = props => {
       <table>
         <tbody>
           <tr>
-            <td>{total || 0}</td>
-            <td>Total</td>
+            <td class="LeftTable LT0">{CantTela + "Mts"|| 0}</td>
+            <td class="RightTable">Cantidad de tela</td>
           </tr>
           <tr>
-            <td></td>
-            <td>Texto</td>
+            <td class="LeftTable LT1">{ModeloE || "None"}</td>
+            <td class="RightTable">Modelo Elegido</td>
           </tr>
           <tr>
-            <td></td>
-            <td>Texto</td>
+            <td class="LeftTable LT0">{CantPañ || 0}</td>
+            <td class="RightTable">Cantidad de paños</td>
           </tr>
           <tr>
-            <td></td>
-            <td>Texto</td>
+            <td class="LeftTable LT1">{Confecc||"$" + 0}</td>
+            <td class="RightTable">Confeccion</td>
+          </tr>
+          <tr>
+            <td class="LeftTable LT0">{"$" + Total||"$" + 0}</td>
+            <td class="RightTable">Total</td>
           </tr>
         </tbody>
       </table>

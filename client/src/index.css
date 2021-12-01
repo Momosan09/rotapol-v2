@@ -42,18 +42,37 @@ code {
   width: 100%;
   grid-template-columns: 150px 1fr;
 }
-
+/*NAV*/
 #logoImg {
   width: 50px;
 }
-
+/*NAV*/
 .divr{
   border: 1px solid black;
   height: 50px;
 }
+/*TABLE*/
 .co0{
   background-color:#85C1E9;
 }
 .co1{
-  background-color:#BB8FCE;
+  background-color:#631491;
 }
+.RightTable{
+  background-color:#b653d4;
+  width:25%;
+}
+.LeftTable{
+  width:50%;
+}
+.LT0{
+  background-color:#54b8e3;
+}
+.LT1{
+  background-color:#5473e3;
+}
+table{
+  border:solid black 1px;
+  background-color:#a834eb;
+}
+/*TABLE*/
