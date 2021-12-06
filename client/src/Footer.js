@@ -1,13 +1,13 @@
 import Form2Comprar from './Form2comprar';
 const Footer = props => {
+
+  const { hayPresupuesto } = props;
+
   return (
     <>
     <br/>
     <section class="footersection1">
-    <button class="section1boton">
-      Comprar
-      <Form2Comprar />
-    </button>
+    <Form2Comprar hayPresupuesto={hayPresupuesto} />
 
     </section>
     <br/>
@@ -19,3 +19,7 @@ const Footer = props => {
 };
 
 export default Footer;
+// <button class="section1boton">
+//   Comprar
+//   <Form2Comprar />
+// </button>

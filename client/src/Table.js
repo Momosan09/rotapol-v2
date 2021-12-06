@@ -5,29 +5,33 @@ const Confecc = null;
 const Total = null;
 
 const Table = props => {
+
+  const { medida, modelo, paño, precioTela} = props;
+
+
   return (
     <>
       <h1>Table</h1>
       <table>
         <tbody>
           <tr>
-            <td class="LeftTable LT0">{CantTela + "Mts"|| 0}</td>
+            <td class="LeftTable LT0">{(medida * 200) / 100 || 0} m2</td>
             <td class="RightTable">Cantidad de tela</td>
           </tr>
           <tr>
-            <td class="LeftTable LT1">{ModeloE || "None"}</td>
+            <td class="LeftTable LT1">{ modelo || "None"}</td>
             <td class="RightTable">Modelo Elegido</td>
           </tr>
           <tr>
-            <td class="LeftTable LT0">{CantPañ || 0}</td>
+            <td class="LeftTable LT0">${paño|| 0} </td>
             <td class="RightTable">Cantidad de paños</td>
           </tr>
           <tr>
-            <td class="LeftTable LT1">{Confecc||"$" + 0}</td>
+            <td class="LeftTable LT1">{precioTela||"$" + 0}</td>
             <td class="RightTable">Confeccion</td>
           </tr>
           <tr>
-            <td class="LeftTable LT0">{"$" + Total||"$" + 0}</td>
+            <td class="LeftTable LT0">{ precioTela + medida || ""}</td>
             <td class="RightTable">Total</td>
           </tr>
         </tbody>
