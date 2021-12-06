@@ -1,5 +1,6 @@
 body {
   margin: 0;
+
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -51,7 +52,7 @@ code {
   border: 1px solid black;
   height: 50px;
 }
-/*TABLE*/
+/*TABLE**************************/
 .co0{
   background-color:#85C1E9;
 }
@@ -72,7 +73,71 @@ code {
   background-color:#5473e3;
 }
 table{
+
+  height: 200px;
+  width: 100%;
   border:solid black 1px;
   background-color:#a834eb;
 }
-/*TABLE*/
+/*TABLE**************************/
+/*NAVBAR********************************/
+.nav{
+  padding: 5px;
+  background-color: #54bae3;
+
+}
+.botonesNavSeccion{
+  display: flex;
+
+}
+.NavBarLeft{
+  width: 20%;
+}
+
+.botonesNav{
+  display: flex;
+  justify-content: space-evenly;
+  width: 60%;
+}
+.NavBarRight{
+  display: flex;
+  justify-content: right;
+  width: 20%;
+}
+
+.boton{
+  width: 16%;
+  background-color: inherit;
+  border: black solid 2px;
+  border-radius: 4px;
+  box-shadow: 2px 1px 1px 1px ;
+
+}
+.activo{
+  background-color: #48e76a;
+
+}
+.admin{
+  width: 25%;
+  background-color: #d47d20;
+}
+/*NAVBAR********************************/
+/*FOOTER********************************/
+/*section1********************************/
+.footersection1{
+  display: flex;
+  justify-content: center;
+}
+
+/*section1********************************/
+
+/*section2********************************/
+.footersection2{
+  background-color: #ad793e /*#9b7850*/;
+}
+
+/*section2********************************/
+
+
+
+/*FOOTER********************************/
