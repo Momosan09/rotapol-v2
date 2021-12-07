@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import axios from 'axios';
 import Navbar from './Navbar';
 import Left from './Left';
 import Right from './Right';
@@ -11,6 +12,12 @@ const App = () => {
   const [paño, setPaño] = useState(''); // hook de estado
   const [precioTela, setPrecioTela] = useState(''); // hook de estado
   const [hayPresupuesto, setHayPresupuesto] = useState(false); // hook de estado
+
+  // useEffect(() => {
+  //   axios.get('/api/orders')
+  //     .then(res => console.log(res.data))
+  //     .catch(err => console.log(err));
+  // }, []);
 
   useEffect(() => {
     if (medida > 0 && modelo !== '' && paño > 0 && precioTela > 0)
