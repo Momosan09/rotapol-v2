@@ -6,7 +6,7 @@ const Total = null;
 
 const Table = props => {
 
-  const { medida, modelo, paño, precioTela} = props;
+  const { medida, modelo, paño, precioTela, cantTela, precTotal } = props;
 
 
   return (
@@ -15,7 +15,7 @@ const Table = props => {
       <table>
         <tbody>
           <tr>
-            <td class="LeftTable LT0">{(medida * 200) / 100 || 0} m2</td>
+            <td class="LeftTable LT0">{cantTela || 0} m2</td>
             <td class="RightTable">Cantidad de tela</td>
           </tr>
           <tr>
@@ -31,7 +31,7 @@ const Table = props => {
             <td class="RightTable">Confeccion</td>
           </tr>
           <tr>
-            <td class="LeftTable LT0">{ precioTela + medida || ""}</td>
+            <td class="LeftTable LT0">{ precTotal|| ""}</td>
             <td class="RightTable">Total</td>
           </tr>
         </tbody>

@@ -2,7 +2,7 @@ import axios from 'axios';
 import { useState } from 'react';
 const Form2comprar = props => {
 
-    const { hayPresupuesto } = props;
+    const { hayPresupuesto, modelo, cantTela, precTotal } = props;
 
     const [name, setName] = useState('');
     const [lastName, setLastName] = useState('');
@@ -16,12 +16,15 @@ const Form2comprar = props => {
       e.preventDefault();
       console.log('enviando pedido');
       const data = {
+        modelo: modelo,
         name: name,
         lastName: lastName,
         phone: phone,
         email: email,
-        total: 0
+        cantTela: cantTela,
+        precTotal: precTotal,
       };
+      console.log(data);
       axios.post('/api/orders', data)
         .then(res => console.log(res.data))
         .catch(err => console.log(err));

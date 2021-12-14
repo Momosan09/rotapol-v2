@@ -6,7 +6,10 @@ const OrderSchema = new Schema({
   lastName: String,
   email: String,
   phone: String,
-  total: Number,
+  modelo:String,
+  cantTela:Number,
+  precTotal: Number,
+  entregado: Boolean,
   date: { type: Date, default: Date.now }
 });
 

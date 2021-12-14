@@ -8,9 +8,11 @@ router.post('/api/orders', (req, res) => {
   const order = new Order({
     name: req.body.name,
     lastName: req.body.lastName,
-    phone: req.body.phone,
     email: req.body.email,
-    total: req.body.total
+    phone: req.body.phone,
+    modelo: req.body.modelo,
+    cantTela: req.body.cantTela,
+    precTotal: req.body.precTotal
   });
   order.save((err, order) => {
     res.status(201).json(order);
