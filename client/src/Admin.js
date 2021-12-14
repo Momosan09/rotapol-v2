@@ -10,12 +10,13 @@ const Admin = () => {
       .then(res => setOrders(res.data))
       .catch(err => console.log(err));
   }, [])
-  //
-  // let autorizado = false;
-  // let password = prompt('Ingrese contraseña');
-  // if (password == '1234') autorizado =true;
 
-  // if (autorizado)
+  let autorizado = false;
+  let password = "asd"
+  password = prompt('Ingrese contraseña');
+  if (password == 'asd') autorizado=true;
+
+  if (autorizado)
   return (
     <>
       <Navbar />
@@ -63,6 +64,6 @@ const Admin = () => {
       </table>
     </>
   );
-  // else return <div></div>;
+  else return <div></div>;
 };
 export default Admin;
