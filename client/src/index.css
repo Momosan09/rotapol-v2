@@ -27,6 +27,10 @@ code {
 .Left {
   width: 50%;
   border: 1px solid red;
+  padding: 1%;
+  display: flex;
+  justify-content: center;
+
 }
 
 .Right {
@@ -98,6 +102,8 @@ table{
   display: flex;
   justify-content: space-evenly;
   width: 60%;
+  text-decoration: none;
+
 }
 .NavBarRight{
   display: flex;
@@ -111,6 +117,12 @@ table{
   border: black solid 2px;
   border-radius: 4px;
   box-shadow: 2px 1px 1px 1px ;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 
 }
 .activo{
@@ -134,6 +146,7 @@ table{
 /*section2********************************/
 .footersection2{
   background-color: #ad793e /*#9b7850*/;
+  height: 15%;
 }
 
 /*section2********************************/
@@ -141,3 +154,26 @@ table{
 
 
 /*FOOTER********************************/
+/*TABLA ADMIN****************************************/
+.cabezaadmin{
+  background-color: #6221a0;
+}
+.F0{
+  background-color: #54bae3;
+}
+.F1{
+  background-color: brown;
+}
+/*TABLA ADMIN****************************************/
+
+/*Form Left**********************************************/
+.FormLeft{
+  display: flex;
+  flex-direction: column;
+  
+}
+.TextLeftForm{
+  width: 100px;
+  height: 18px;
+}
+/*Form Left**********************************************/

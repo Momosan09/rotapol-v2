@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import Navbar from './Navbar';
+import Footer from './Footer';
+
 const Admin = () => {
 
   const [orders, setOrders] = useState([]);
@@ -22,8 +24,9 @@ const Admin = () => {
       <Navbar />
       <h1>Admin</h1>
       <table>
-        <thead>
+        <thead className="cabezaadmin">
           <tr>
+            {/* <th>Indice</th> */}
             <th>Fecha</th>
             <th>Nombre</th>
             <th>Apelldio</th>
@@ -40,17 +43,19 @@ const Admin = () => {
           {orders.map(order => {
             let d = new Date(order.date);
             console.log(d);
+            /*let i = i + 1;*/
             return (
             <tr>
-              <td>{d.toLocaleDateString('es-AR')}</td>
-              <td>{order.name}</td>
-              <td>{order.lastName}</td>
-              <td>{order.phone}</td>
-              <td>{order.email}</td>
-              <td>{order.modelo}</td>
-              <td>{order.cantTela}</td>
-              <td>$ {order.precTotal}</td>
-              <td><input type="checkbox"/></td>
+              {/*<td>{i}</td>*/}
+              <td className="F0">{d.toLocaleDateString('es-AR') || "null"}</td>
+              <td className="F1">{order.name        || "null" }</td>
+              <td className="F0">{order.lastName    || "null"}</td>
+              <td className="F1">{order.phone       || "null"}</td>
+              <td className="F0">{order.email       || "null"}</td>
+              <td className="F1">{order.modelo      || "null"}</td>
+              <td className="F0">{order.cantTela    || "null"}</td>
+              <td className="F1">$ {order.precTotal || "null"}</td>
+              <td className="F0"><input type="checkbox"/></td>
 
 
 
@@ -62,7 +67,9 @@ const Admin = () => {
         })}
         </tbody>
       </table>
+      <Footer />
     </>
+    
   );
   /* else return <div></div>; */
 };

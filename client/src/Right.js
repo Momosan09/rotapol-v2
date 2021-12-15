@@ -7,7 +7,6 @@ const Right = props => {
   return (
     <div className="Right">
       <h1>Right</h1>
-      <p>Texto de relleno</p>
       <Table
       cantTela={cantTela}
       modelo={modelo}

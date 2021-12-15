@@ -11,7 +11,6 @@ const Table = props => {
 
   return (
     <>
-      <h1>Table</h1>
       <table>
         <tbody>
           <tr>

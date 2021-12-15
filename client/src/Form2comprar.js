@@ -71,6 +71,7 @@ const Form2comprar = props => {
 
         <br/>
         <button type="submit">Comprar</button>
+        <br/>
     </form>
     </>
     );
