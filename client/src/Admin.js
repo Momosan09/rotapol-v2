@@ -11,12 +11,12 @@ const Admin = () => {
       .catch(err => console.log(err));
   }, [])
 
-  let autorizado = false;
+ /*  let autorizado = false;
   let password = "asd"
   password = prompt('Ingrese contraseña');
   if (password == 'asd') autorizado=true;
 
-  if (autorizado)
+  if (autorizado) */
   return (
     <>
       <Navbar />
@@ -64,6 +64,6 @@ const Admin = () => {
       </table>
     </>
   );
-  else return <div></div>;
+  /* else return <div></div>; */
 };
 export default Admin;
