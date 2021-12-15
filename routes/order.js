@@ -27,5 +27,18 @@ router.get('/api/orders', (req, res) => {
 router.get('/api/orders/:id', (req, res) => {
   res.send('hacer ' + req.params.id);
 });
+router.put("/api/orders/:id", (req,res) => {
+  let id = req.params.id;
+  let update = {
+    entregado: req.body.entregado
+  };
+  let options = {
+    returnDocument: 'after'
+  };
+  Order.findByIdAndUpdate(id, update, options, (err, order) => {
+    res.status(200).json(order);
+  });
+  // res.send(req.params.id );
+})
 
 module.exports = router;

@@ -9,9 +9,35 @@ const Admin = () => {
 
   useEffect(() => {
     axios.get('/api/orders')
-      .then(res => setOrders(res.data))
+      .then(res => {
+        console.log(res.data);
+        setOrders(res.data);
+      })
       .catch(err => console.log(err));
   }, [])
+
+  const handleCheckbox = e => {
+    // console.log(e.target.value);
+    let id = e.target.value;
+    let entregado = e.target.checked;
+    console.log(id, entregado);
+    let data = { entregado };
+    axios.put("/api/orders/"+id, data)
+      .then(res => {
+        console.log(res.data);
+        let nuevasOrdenes = [];
+        nuevasOrdenes = orders.map(orden => {
+          if (orden._id === id)
+            return res.data;
+          else
+            return orden;
+        });
+        setOrders(nuevasOrdenes);
+      })
+      .catch(err => console.log(err))
+  };
+
+
 
  /*  let autorizado = false;
   let password = "asd"
@@ -19,6 +45,8 @@ const Admin = () => {
   if (password == 'asd') autorizado=true;
 
   if (autorizado) */
+  const estilo = { textDecoration: 'line-through' };
+
   return (
     <>
       <Navbar />
@@ -26,7 +54,7 @@ const Admin = () => {
       <table>
         <thead className="cabezaadmin">
           <tr>
-            {/* <th>Indice</th> */}
+            <th>#</th>
             <th>Fecha</th>
             <th>Nombre</th>
             <th>Apelldio</th>
@@ -40,24 +68,21 @@ const Admin = () => {
           </tr>
         </thead>
         <tbody>
-          {orders.map(order => {
+          {orders.map((order, i) => {
             let d = new Date(order.date);
             console.log(d);
-            /*let i = i + 1;*/
             return (
-            <tr>
-              {/*<td>{i}</td>*/}
-              <td className="F0">{d.toLocaleDateString('es-AR') || "null"}</td>
-              <td className="F1">{order.name        || "null" }</td>
-              <td className="F0">{order.lastName    || "null"}</td>
-              <td className="F1">{order.phone       || "null"}</td>
-              <td className="F0">{order.email       || "null"}</td>
-              <td className="F1">{order.modelo      || "null"}</td>
-              <td className="F0">{order.cantTela    || "null"}</td>
-              <td className="F1">$ {order.precTotal || "null"}</td>
-              <td className="F0"><input type="checkbox"/></td>
-
-
+            <tr key={order._id}>
+              <td style={order.entregado ? estilo : null}>{i+1}</td>
+              <td style={order.entregado ? estilo : null} className="F0">{d.toLocaleDateString('es-AR') || "null"}</td>
+              <td style={order.entregado ? estilo : null} className="F1">{order.name        || "null" }</td>
+              <td style={order.entregado ? estilo : null} className="F0">{order.lastName    || "null"}</td>
+              <td style={order.entregado ? estilo : null} className="F1">{order.phone       || "null"}</td>
+              <td style={order.entregado ? estilo : null} className="F0">{order.email       || "null"}</td>
+              <td style={order.entregado ? estilo : null} className="F1">{order.modelo      || "null"}</td>
+              <td style={order.entregado ? estilo : null} className="F0">{order.cantTela    || "null"}</td>
+              <td style={order.entregado ? estilo : null} className="F1">$ {order.precTotal || "null"}</td>
+              <td className="F0"><input checked={order.entregado} value={order._id} onChange={handleCheckbox} type="checkbox"/></td>
 
 
 
@@ -69,7 +94,7 @@ const Admin = () => {
       </table>
       <Footer />
     </>
-    
+
   );
   /* else return <div></div>; */
 };

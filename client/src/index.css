@@ -170,10 +170,18 @@ table{
 .FormLeft{
   display: flex;
   flex-direction: column;
-  
+
 }
 .TextLeftForm{
   width: 100px;
   height: 18px;
 }
 /*Form Left**********************************************/
+/*MiddleForm*********************************************/
+.middleForm{
+  width: 100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

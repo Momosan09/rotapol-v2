@@ -6,17 +6,17 @@ const Footer = props => {
   return (
     <>
 
-    <section class="footersection1">
+    <section className="footersection1">
     <Form2Comprar
       hayPresupuesto={hayPresupuesto}
       modelo={modelo}
       cantTela={cantTela}
       precTotal={precTotal}
     />
-    
+
     </section>
 
-    <section class="footersection2">
+    <section className="footersection2">
     <h1>footer</h1>
     </section>
     </>
@@ -24,4 +24,3 @@ const Footer = props => {
 };
 
 export default Footer;
-

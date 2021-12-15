@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import axios from 'axios';
+// import axios from 'axios';
 import Navbar from './Navbar';
 import Left from './Left';
 import Right from './Right';

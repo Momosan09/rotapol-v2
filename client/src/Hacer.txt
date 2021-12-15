@@ -1,4 +1,0 @@
-1.right y left centrados 
- 2.Dar estilo a los inputs
-  3.Separar los input radio para que queden todos en una misma columna
-   4.¿Hacer que la tabla de datos ocupe todo el Right?

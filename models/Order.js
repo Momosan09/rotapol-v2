@@ -9,7 +9,7 @@ const OrderSchema = new Schema({
   modelo:String,
   cantTela:Number,
   precTotal: Number,
-  entregado: Boolean,
+  entregado: { type: Boolean, default: false },
   date: { type: Date, default: Date.now }
 });
 

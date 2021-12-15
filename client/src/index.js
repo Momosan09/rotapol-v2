@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import Middle from './middle';
+import Middle from './Middle';
 import Admin from './Admin';
 import Contact from './Contact';
 

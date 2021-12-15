@@ -19,11 +19,11 @@ const Form = props => {
     setPrecioTela,
     setModelo } = props;
 
-  const handleClick = () => {
-    setMedida("");
-    setPaño("");
-    setPrecioTela("");    
-  };
+  // const handleClick = () => {
+  //   setMedida("");
+  //   setPaño("");
+  //   setPrecioTela("");
+  // };
 
   return (
     <>

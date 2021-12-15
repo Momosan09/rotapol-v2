@@ -40,7 +40,7 @@ const Form2comprar = props => {
           value={name}
           onChange={e => setName(e.target.value)}
           type="text"
-          maxlength="20"
+          maxLength="20"
         />
         <br/>
 
@@ -49,7 +49,7 @@ const Form2comprar = props => {
          value={lastName}
           onChange={e => setLastName(e.target.value)}
          type="text"
-         maxlength="20"/>
+         maxLength="20"/>
         <br/>
 
         <label>Email</label>
@@ -57,7 +57,7 @@ const Form2comprar = props => {
          value={email}
          onChange={e => setEmail(e.target.value)}
          type="text"
-         maxlength="30"/>
+         maxLength="30"/>
 
         <br/>
 
@@ -67,7 +67,7 @@ const Form2comprar = props => {
          onChange={e => setPhone(e.target.value)}
          type="number"
          min="1"
-         maxlength="30"/>
+         maxLength="30"/>
 
         <br/>
         <button type="submit">Comprar</button>
