@@ -41,15 +41,6 @@ const Table = props => {
           </tr>
         </tbody>
       </table>
-
-
-      {/*<div classNameName="divr co0"><p>resultado1</p></div>
-      <div classNameName="divr co1"><p>resultado2</p></div>
-      <div classNameName="divr co0"><p>resultado3</p></div>
-      <div classNameName="divr co1"><p>resultado4</p></div>
-      <div classNameName="divr co0"><p>resultado5</p></div>
-      <div classNameName="divr co1"><p>resultado6</p></div>*/}
-
     </>
 
   );

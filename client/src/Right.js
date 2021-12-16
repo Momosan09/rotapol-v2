@@ -9,7 +9,7 @@ const Right = props => {
           precioTela,
           cantTela,
           precTotal,
-           } = props;
+          } = props;
 
   return (
     <div className="Right">
