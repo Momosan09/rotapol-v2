@@ -1,0 +1,4 @@
+1. dentro de client hacer "git pull" dsps "npm i"
+2. Para hacer el build: cd client, npm run build
+    Mover todo lo que sale en la carpeta build adentro de rotapol/public
+      pushear a github y automaticamente se actualiza en heroku
