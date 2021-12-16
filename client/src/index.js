@@ -5,6 +5,7 @@ import App from './App';
 import Middle from './Middle';
 import Admin from './Admin';
 import Contact from './Contact';
+import Detalles from './Detalles';
 
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Routes, Route } from 'react-router-dom';
@@ -16,6 +17,7 @@ ReactDOM.render(
         <Route path="/" element={<App />} />
         <Route path="/middle" element={<Middle />} />
         <Route path="/admin" element={<Admin />} />
+        <Route path="/admin/:id" element={<Detalles />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>

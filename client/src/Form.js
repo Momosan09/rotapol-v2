@@ -14,10 +14,13 @@ const Form = props => {
     precioTela,
     paño,
     modelo,
+    valor,
     setMedida,
     setPaño,
     setPrecioTela,
-    setModelo } = props;
+    setModelo,
+    setValor
+     } = props;
 
   // const handleClick = () => {
   //   setMedida("");
@@ -31,7 +34,7 @@ const Form = props => {
         <label>Medida</label>
         <input onChange={e => setMedida(e.target.value)} value={medida} type="number" min="1" className="TextLeftForm"/>
         <br/>
-        <Radios setModelo={setModelo} modelo={modelo} />
+        <Radios setValor={setValor} setModelo={setModelo} modelo={modelo} />
         <br/>
         <label>Precio de un solo paño</label>
         <input onChange={e => setPaño(e.target.value)} value={paño} type="number" min="1" className="TextLeftForm"/>

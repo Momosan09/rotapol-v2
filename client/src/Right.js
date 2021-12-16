@@ -2,7 +2,14 @@ import Table from './Table';
 
 const Right = props => {
 
-  const { medida, modelo, paño, precioTela, cantTela, precTotal } = props;
+  const { medida,
+          modelo,
+          valor,
+          paño,
+          precioTela,
+          cantTela,
+          precTotal,
+           } = props;
 
   return (
     <div className="Right">
@@ -11,6 +18,7 @@ const Right = props => {
       cantTela={cantTela}
       modelo={modelo}
       medida={medida}
+      valor={valor}
       paño={paño}
       precioTela={precioTela}
       precTotal={precTotal}

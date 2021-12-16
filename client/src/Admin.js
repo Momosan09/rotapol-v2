@@ -64,6 +64,7 @@ const Admin = () => {
             <th>cantidad de Tela</th>
             <th>Total</th>
             <th></th>
+            <th>Ver</th>
 
           </tr>
         </thead>
@@ -83,7 +84,7 @@ const Admin = () => {
               <td style={order.entregado ? estilo : null} className="F0">{order.cantTela    || "null"}</td>
               <td style={order.entregado ? estilo : null} className="F1">$ {order.precTotal || "null"}</td>
               <td className="F0"><input checked={order.entregado} value={order._id} onChange={handleCheckbox} type="checkbox"/></td>
-
+              <td><a href={"/admin/" + order._id}>Detalle</a></td>
 
 
             </tr>

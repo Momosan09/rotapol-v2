@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { manoDeObra }  from './constantes';
 // import axios from 'axios';
 import Navbar from './Navbar';
 import Left from './Left';
@@ -7,14 +8,17 @@ import Footer from './Footer';
 
 const App = () => {
 
+  // constantes
+
+
   const [medida, setMedida] = useState(''); // hook de estado
   const [modelo, setModelo] = useState(''); // hook de estado
+  const [valor, setValor] = useState(1); // hook de estado
   const [paño, setPaño] = useState(''); // hook de estado
   const [precioTela, setPrecioTela] = useState(''); // hook de estado
   const [hayPresupuesto, setHayPresupuesto] = useState(false); // hook de estado
   const [cantTela, setCantTela] = useState(0);
   const [precTotal, setPrecTotal] =useState(0);
-
 
 
   // useEffect(() => {
@@ -27,7 +31,7 @@ const App = () => {
   }, [medida])
 
   useEffect(()=>{
-    setPrecTotal( parseInt(precioTela) + parseInt(medida) );
+    setPrecTotal( parseInt(precioTela) + parseInt(medida) + manoDeObra );
   }, [precioTela, medida])
 
   useEffect(() => {
@@ -50,12 +54,14 @@ const App = () => {
           setMedida={setMedida}
           setModelo={setModelo}
           setPaño={setPaño}
+          setValor={setValor}
           setPrecioTela={setPrecioTela}
         />
         <Right
           medida={medida}
           modelo={modelo}
           paño={paño}
+          valor={valor}
           precioTela={precioTela}
           cantTela={cantTela}
           precTotal={precTotal}

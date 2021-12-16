@@ -7,10 +7,13 @@ const Left = props => {
     precioTela,
     paño,
     modelo,
+    valor,
     setMedida,
     setPaño,
     setPrecioTela,
-    setModelo } = props;
+    setModelo,
+    setValor
+          } = props;
 
   return (
     <div className="Left">
@@ -23,6 +26,7 @@ const Left = props => {
         setMedida={setMedida}
         setModelo={setModelo}
         setPaño={setPaño}
+        setValor={setValor}
         setPrecioTela={setPrecioTela}
       />
     </div>

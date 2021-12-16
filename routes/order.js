@@ -25,7 +25,9 @@ router.get('/api/orders', (req, res) => {
   });
 });
 router.get('/api/orders/:id', (req, res) => {
-  res.send('hacer ' + req.params.id);
+  Order.findById(req.params.id, (err, order) => {
+    res.status(200).json(order);
+  });
 });
 router.put("/api/orders/:id", (req,res) => {
   let id = req.params.id;

@@ -6,7 +6,13 @@
 
 const Table = props => {
 
-  const { modelo, paño, precioTela, cantTela, precTotal } = props;
+  const { modelo,
+          valor,
+          paño,
+          precioTela,
+          cantTela,
+          precTotal,
+          } = props;
 
 
   return (
@@ -14,7 +20,7 @@ const Table = props => {
       <table>
         <tbody>
           <tr>
-            <td className="LeftTable LT0">{cantTela || 0} m2</td>
+            <td className="LeftTable LT0">{cantTela * valor || 0} m2</td>
             <td className="RightTable">Cantidad de tela</td>
           </tr>
           <tr>
