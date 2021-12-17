@@ -14,24 +14,22 @@ const Middle = () => {
       navigate('/');
   }
   return (
-      <div className="middleForm">
-      <h1>Login</h1>
-
+      <div className="MiddleForm">
+      <div className="MiddleStyle">
+      <h1 className="PasswordH1">Login</h1>
       <form onSubmit={handleSubmit}>
-        <input
+        <input className="PasswordInput"
           value={password}
           id="pass"
           type="password"
           onChange={e => setPassword(e.target.value)}
-        />
+          />
+          <div>
         <button type="submit">Entrar</button>
+          </div>
       </form>
     </div>
+  </div>
   );
 }
-// let Pass = document.getElementById("pass");
-// console.log(Pass);
-// if(Pass === 1234) console.log("Correcto")
-
-
 export default Middle;

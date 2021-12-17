@@ -7,7 +7,6 @@ const Left = props => {
     precioTela,
     paño,
     modelo,
-    valor,
     setMedida,
     setPaño,
     setPrecioTela,
@@ -17,7 +16,6 @@ const Left = props => {
 
   return (
     <div className="Left">
-      <h1>Left</h1>
       <Form
         medida={medida}
         modelo={modelo}

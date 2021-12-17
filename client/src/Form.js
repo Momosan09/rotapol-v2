@@ -14,13 +14,12 @@ const Form = props => {
     precioTela,
     paño,
     modelo,
-    valor,
     setMedida,
     setPaño,
     setPrecioTela,
     setModelo,
     setValor
-     } = props;
+    } = props;
 
   // const handleClick = () => {
   //   setMedida("");
@@ -30,19 +29,34 @@ const Form = props => {
 
   return (
     <>
+        <div className="DivForFromStyle AllContainer">
       <form className="FormLeft" onSubmit={handleSubmit}>
+        <div className="DivForFromStyle">
         <label>Medida</label>
-        <input onChange={e => setMedida(e.target.value)} value={medida} type="number" min="1" className="TextLeftForm"/>
-        <br/>
+        <div className="InputTextStyleExtern Inverted">
+        <input placeholder="Medida en Cm" onChange={e => setMedida(e.target.value)} value={medida} type="number" min="1" className="TextLeftForm InputTextStyleIntern"/>
+        <h2 className="AdjustHSize">Cm</h2>
+        </div>
+        </div>
+        <div className="DivForFromStyle">
         <Radios setValor={setValor} setModelo={setModelo} modelo={modelo} />
-        <br/>
+        </div>
+        <div className="DivForFromStyle">
         <label>Precio de un solo paño</label>
-        <input onChange={e => setPaño(e.target.value)} value={paño} type="number" min="1" className="TextLeftForm"/>
-        <br/>
+        <div className="InputTextStyleExtern">
+        <p>$</p>
+        <input placeholder="############" onChange={e => setPaño(e.target.value)} value={paño} type="number" min="1" className="TextLeftForm InputTextStyleIntern"/>
+        </div>
+        </div>
+        <div className="DivForFromStyle">
         <label>Precio de la tela</label>
-        <input onChange={e => setPrecioTela(e.target.value)} value={precioTela} type="number" min="1" className="TextLeftForm"/>
-        <br/>
+        <div className="InputTextStyleExtern">
+        <p>$</p>
+        <input placeholder="############" onChange={e => setPrecioTela(e.target.value)} value={precioTela} type="number" min="1" className="TextLeftForm InputTextStyleIntern"/>
+        </div>
+        </div>
       </form>
+      </div>
     </>
   );
 };

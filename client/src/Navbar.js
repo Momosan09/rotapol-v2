@@ -1,4 +1,4 @@
-import logo from './img/logo.png';
+import logo from './img/rotapol logo.png';
 import { Link } from 'react-router-dom';
 
 
@@ -6,12 +6,7 @@ const Navbar = props => {
   return (
     <>
     <div className="nav">
-
-
-
-
     <section className="botonesNavSeccion">
-
     <div className="NavBarLeft">
     <img id="logoImg" alt="logo" src={logo} />
     </div>

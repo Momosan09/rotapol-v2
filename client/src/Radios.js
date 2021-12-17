@@ -6,13 +6,19 @@
 const modelos = [
   { nombre: 'Americano 1', valor: 1 },
   { nombre: 'Americano 2', valor: 2 },
+  { nombre: 'Americano 2.5', valor: 2.5 },
+  { nombre: 'Americano 3', valor: 3 },
+  { nombre: 'Plisado', valor: 2 },
+  { nombre: 'Presilla', valor: 2 },
+  { nombre: 'Vanesa', valor: 2 },
+  { nombre: 'Vanesa Doble', valor: 2 },
+  
   
 ];
 
 const Radios = props => {
 
   const { modelo,
-          valor,
           setModelo,
           setValor
           } = props;

@@ -17,14 +17,14 @@ const Table = props => {
 
   return (
     <>
-      <table>
+      <table className="RadiosTable">
         <tbody>
           <tr>
             <td className="LeftTable LT0">{cantTela * valor || 0} m2</td>
             <td className="RightTable">Cantidad de tela</td>
           </tr>
           <tr>
-            <td className="LeftTable LT1">{ modelo || "None"}</td>
+            <td className="LeftTable LT1">{ modelo || "???????"}</td>
             <td className="RightTable">Modelo Elegido</td>
           </tr>
           <tr>
@@ -32,11 +32,11 @@ const Table = props => {
             <td className="RightTable">Cantidad de paños</td>
           </tr>
           <tr>
-            <td className="LeftTable LT1">{precioTela||"$" + 0}</td>
+            <td className="LeftTable LT1">${precioTela||0}</td>
             <td className="RightTable">Confeccion</td>
           </tr>
           <tr>
-            <td className="LeftTable LT0">{ precTotal|| ""}</td>
+            <td className="LeftTable LT0">${precTotal ||""}</td>
             <td className="RightTable">Total</td>
           </tr>
         </tbody>

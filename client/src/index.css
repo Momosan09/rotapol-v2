@@ -6,9 +6,13 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(77, 77, 77);
+  font-size: 130%;
 
 }
-
+body::-webkit-scrollbar {
+  display: none;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -27,7 +31,6 @@ code {
 
 .Left {
   width: 50%;
-  border: 1px solid red;
   padding: 1%;
   display: flex;
   justify-content: center;
@@ -36,7 +39,10 @@ code {
 
 .Right {
   width: 50%;
-  border: 1px solid green;
+  padding: 1%;
+  display: flex;
+  justify-content: center;
+
 }
 .modelos{
   display: flex;
@@ -44,9 +50,7 @@ code {
 }
 
 .Radios {
-  display: grid;
   width: 100%;
-  grid-template-columns: 150px 1fr;
 }
 /*NAV*/
 #logoImg {
@@ -65,30 +69,34 @@ code {
   background-color:#631491;
 }
 .RightTable{
-  background-color:#b653d4;
+  background-color:rgb(200, 108, 33);
   width:25%;
+  
 }
 .LeftTable{
   width:50%;
 }
 .LT0{
-  background-color:#54b8e3;
+  background-color:#616161;
 }
 .LT1{
-  background-color:#5473e3;
+  background-color:#959595;
 }
-table{
 
-  height: 200px;
+.RadiosTable{
+  height: 70%;
   width: 100%;
   border:solid black 1px;
-  background-color:#a834eb;
+  background-color:#000000;
+}
+.RadiosTableTr{
+  height: 10px;
 }
 /*TABLE**************************/
 /*NAVBAR********************************/
 .nav{
   padding: 5px;
-  background-color: #54bae3;
+  background-color: rgb(184, 47, 47);
 
 }
 .botonesNavSeccion{
@@ -155,17 +163,7 @@ table{
 
 
 /*FOOTER********************************/
-/*TABLA ADMIN****************************************/
-.cabezaadmin{
-  background-color: #6221a0;
-}
-.F0{
-  background-color: #54bae3;
-}
-.F1{
-  background-color: brown;
-}
-/*TABLA ADMIN****************************************/
+
 
 /*Form Left**********************************************/
 .FormLeft{
@@ -177,12 +175,111 @@ table{
   width: 100px;
   height: 18px;
 }
+.DivForFromStyle{
+  border: solid black 1px;
+  padding: 10%;
+}
+.AllContainer{
+  padding: 1%;
+  width: 50%;
+}
+.InputTextStyleExtern{
+  padding: 3px;
+  padding-right:0;
+  border: black solid 1px;
+  border-right: none;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 140px;
+  height: 20px;
+  background-color: rgba(25, 200, 25, 0.705);
+}
+.InputTextStyleIntern{
+  width: 110px;
+  height: 22px;
+
+}
+.Inverted{
+  justify-content: start;
+  border-left: none;
+  padding-left: 0;
+  border-right: black solid 1px;
+  padding-right: 3px;
+  background-color: rgba(100, 150, 235, 0.705);
+}
+.AdjustHSize{
+  font-size: 70%;
+}
 /*Form Left**********************************************/
 /*MiddleForm*********************************************/
-.middleForm{
+.MiddleForm{
   width: 100%;
+  zoom: 3;
   display:flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+
 }
+.MiddleStyle{
+  padding: 5%;
+  width: 20%;
+  border: black solid ;
+}
+.PasswordInput{
+  width: 50%;
+}
+.PasswordH1{
+  font-size: 100%;
+}
+/*MiddleForm**********************************************/
+/*Admin***************************************************/
+
+.TableAdmin{
+  width: 100%;
+  background-color: azure;
+  border: black solid 1px;
+}
+.TrAdminTable{
+  background-color: rgb(173, 171, 30);
+  width: 100%;
+}
+.AdminIndex{
+  background-color: rgb(20, 240, 55);
+  
+}
+.F0{
+  background-color: rgb(165, 68, 68);
+}
+.F1{
+  background-color: rgb(85, 192, 163);
+}
+#Printer{
+  width: 30px;
+}
+/*Admin***************************************************/
+/*Detalles************************************************/
+/* .DetallesSection{
+  border: black dashed  1px;
+} */
+.DetallesElement1{
+  border: black solid 60px;
+  width: 100%;
+}
+.DetallesLogo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+#logoImgDetalles{
+  width: 100px;
+  height: 50px;
+}
+.ClientName{
+  display: flex;
+  justify-content: end;
+}
+/*Detalles************************************************/

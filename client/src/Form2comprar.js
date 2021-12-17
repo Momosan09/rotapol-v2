@@ -32,47 +32,78 @@ const Form2comprar = props => {
 
 
     return (
-    <>
-    <form hidden={hayPresupuesto ? false : true} onSubmit={handleSubmit}>
-        <br/>
-        <label>Nombre</label>
-        <input
+      <>
+  <form hidden={hayPresupuesto ? false : true} onSubmit={handleSubmit}>
+    <table>
+      <tbody>
+        <tr>
+          <td>
+          <label>Nombre</label>
+          </td>
+          <td>
+          <input
           value={name}
           onChange={e => setName(e.target.value)}
           type="text"
           maxLength="20"
+          required
+          autofocus
         />
-        <br/>
-
-        <label>Apellido</label>
-        <input
-         value={lastName}
+          </td>
+        </tr>
+        <tr>
+        <td>
+          <label>Apellido</label>
+          </td>
+          <td>
+          <input
+          value={lastName}
           onChange={e => setLastName(e.target.value)}
-         type="text"
-         maxLength="20"/>
-        <br/>
-
+          type="text"
+          maxLength="20"
+          required
+          autofocus
+          />
+          </td>
+        </tr>
+        <tr>
+          <td>
         <label>Email</label>
-        <input
-         value={email}
-         onChange={e => setEmail(e.target.value)}
-         type="text"
-         maxLength="30"/>
-
-        <br/>
-
-        <label>Telefono</label>
-        <input
-         value={phone}
-         onChange={e => setPhone(e.target.value)}
-         type="number"
-         min="1"
-         maxLength="30"/>
-
-        <br/>
-        <button type="submit">Comprar</button>
-        <br/>
-    </form>
+          </td>
+          <td>
+          <input
+        value={email}
+        onChange={e => setEmail(e.target.value)}
+        type="email"
+        maxLength="20"
+        autofocus
+        />
+        </td>
+        </tr>
+        <tr>
+          <td>
+          <label>Telefono</label>
+          </td>
+          <td>
+          <input
+        value={phone}
+        onChange={e => setPhone(e.target.value)}
+        type="text"
+        minLength="8"
+        maxLength="8"
+        required
+        autofocus
+        />
+          </td>
+        </tr>
+        <tr>
+          <td>
+        <button type="submit">Comprar</button> {/* <button type="reset">Reset</button> */}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </form>
     </>
     );
 };

@@ -13,7 +13,7 @@ const Right = props => {
 
   return (
     <div className="Right">
-      <h1>Right</h1>
+
       <Table
       cantTela={cantTela}
       modelo={modelo}
