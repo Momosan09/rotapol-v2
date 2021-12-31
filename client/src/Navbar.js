@@ -12,8 +12,8 @@ const Navbar = props => {
     </div>
 
     <div className="botonesNav">
-    <Link className="boton activo"  to="/">Calcular 1</Link>
-    <button className="boton">Calcular 2</button>
+    <Link className="boton activo"  to="/">Cortinas de Tela</Link>
+    <button className="boton">Sistemas</button>
     </div>
 
     <div className="NavBarRight">

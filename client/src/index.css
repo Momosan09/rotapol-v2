@@ -44,14 +44,77 @@ code {
   justify-content: center;
 
 }
+/* ToolTip */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  color:  rgb(165, 88, 88) ;
+  border-bottom: 1px double;
+  cursor:alias;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  opacity: 0;
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0.705);
+  color: #000000;
+  text-align: center;
+  border: #000000 solid 1px;
+  padding: 2px 0;
+  transition: 0.27s;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 105%;
+
+}
+.tooltiptext{
+  width: 300px;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+  cursor:default;
+
+  
+}
+/* ToolTip */
+
 .modelos{
   display: flex;
   justify-content:space-around;
 }
-
+/* RADIOS */
 .Radios {
   width: 100%;
 }
+.TableModelos{
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+
+}
+.HeadTableModelos{
+  background-color: rgb(160, 160, 160);
+}
+.BodyTableModelos{
+display: flex;
+flex-direction: column;
+}
+.ThRightStyle{
+  width: 12%;
+
+}
+.NombresModelos{
+  background-color: rgb(168, 150, 150);
+  width: 100%;
+}
+.InputsModelos{
+  background-color: rgb(139, 33, 200);
+}
+/* RADIOS */
 /*NAV*/
 #logoImg {
   width: 50px;
@@ -75,6 +138,7 @@ code {
 }
 .LeftTable{
   width:50%;
+  padding-left: 10px;
 }
 .LT0{
   background-color:#616161;
@@ -89,6 +153,7 @@ code {
   border:solid black 1px;
   background-color:#000000;
 }
+
 .RadiosTableTr{
   height: 10px;
 }
@@ -136,7 +201,7 @@ code {
 }
 .activo{
   background-color: #48e76a;
-
+  cursor: default;
 }
 .admin{
   width: 25%;
@@ -150,9 +215,18 @@ code {
   justify-content: center;
 }
 
-/*section1********************************/
+/*Form2Comprar********************************/
 
-/*section2********************************/
+.SupTagRequiered{
+  color: rgba(179, 27, 27, 0.822);
+}
+
+/* .PurchaseButton{
+
+  background-color: ;
+} */
+
+/*Form2Comprar********************************/
 .footersection2{
   background-color: #ad793e /*#9b7850*/;
   height: 15%;
@@ -199,6 +273,7 @@ code {
   width: 110px;
   height: 22px;
 
+
 }
 .Inverted{
   justify-content: start;
@@ -211,6 +286,15 @@ code {
 .AdjustHSize{
   font-size: 70%;
 }
+.LabelStyle{
+  color:#b9b9b9;
+  text-decoration: underline;
+}
+.LabelStyleExtern{
+  padding: 5px;
+  padding-left:0px ;
+}
+
 /*Form Left**********************************************/
 /*MiddleForm*********************************************/
 .MiddleForm{

@@ -10,11 +10,10 @@ const Form2comprar = props => {
     const [email, setEmail] = useState('');
 
 
-
-
     const handleSubmit = e => {
       e.preventDefault();
       console.log('enviando pedido');
+      alert("Pedido Enviado");
       const data = {
         modelo: modelo,
         name: name,
@@ -31,14 +30,17 @@ const Form2comprar = props => {
     };
 
 
+
     return (
       <>
   <form hidden={hayPresupuesto ? false : true} onSubmit={handleSubmit}>
+    
     <table>
       <tbody>
         <tr>
           <td>
-          <label>Nombre</label>
+          <label>Nombre
+            <sup className="SupTagRequiered">*</sup></label>
           </td>
           <td>
           <input
@@ -47,13 +49,14 @@ const Form2comprar = props => {
           type="text"
           maxLength="20"
           required
+          placeholder="####################"
           autofocus
         />
           </td>
         </tr>
         <tr>
         <td>
-          <label>Apellido</label>
+          <label>Apellido<sup className="SupTagRequiered">*</sup></label>
           </td>
           <td>
           <input
@@ -62,6 +65,7 @@ const Form2comprar = props => {
           type="text"
           maxLength="20"
           required
+          placeholder="####################"
           autofocus
           />
           </td>
@@ -76,21 +80,22 @@ const Form2comprar = props => {
         onChange={e => setEmail(e.target.value)}
         type="email"
         maxLength="20"
+        placeholder="Rotapol@hotmail.com"
         autofocus
         />
         </td>
         </tr>
         <tr>
           <td>
-          <label>Telefono</label>
+          <label>Telefono<sup className="SupTagRequiered">*</sup></label>
           </td>
           <td>
           <input
         value={phone}
         onChange={e => setPhone(e.target.value)}
-        type="text"
-        minLength="8"
-        maxLength="8"
+        type="tel"
+        pattern="[0-9]{4}[0-9]{4}" /*[0-9] valores aceptados */ /* {4} cantidad de digitos */ /* Si pusiera en el medio un "-" seria obligatorio ponerlo */
+        placeholder="00000000"
         required
         autofocus
         />
@@ -98,7 +103,10 @@ const Form2comprar = props => {
         </tr>
         <tr>
           <td>
-        <button type="submit">Comprar</button> {/* <button type="reset">Reset</button> */}
+        <button className="PurchaseButton"  type="submit" onclick="deactivatefunc()" id="desactivator">Comprar</button> {/* <button type="reset">Reset</button> */}
+        <div class="tooltip ">(?)
+  <span class="tooltiptext">El asterisco ("*") marca los campos que deben ser rellenados</span>
+</div>
           </td>
         </tr>
       </tbody>
