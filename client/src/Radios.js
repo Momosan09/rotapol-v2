@@ -1,8 +1,3 @@
-// const modelos = [
-//   'Americano 1', 'Americano 2', 'Americano 2.5', 'Americano 3',
-//   'Plisado', 'Presilla', 'Vanesa', 'Vanesa doble'
-// ];
-
 const modelos = [
   { nombre: 'Americano 1.5 pellizcos', valor: 1.5 },
   { nombre: 'Americano 2 pellizcos', valor: 2 },

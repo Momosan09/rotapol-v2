@@ -69,6 +69,11 @@ const Form = props => {
         <input placeholder="############" onChange={e => setPrecioTela(e.target.value)} value={precioTela} type="number" min="1" className="TextLeftForm InputTextStyleIntern"/>
         </div>
         </div>
+        <div className="DivForFromStyle inside">
+        <div className="LabelStyleExtern">
+        <label className="LabelStyle" >Metodo de pago</label>             {/* LABEL*****/}
+        </div>
+        </div>
       </form>
       </div>
     </>
