@@ -23,7 +23,7 @@ Total = (TelaTotal * precioTela) + Confeccion;
       <table className="RadiosTable">
         <tbody>
           <tr>
-            <td className="LeftTable LT0">{(cantTela * valor) || 0} m2</td>
+            <td className="LeftTable LT0">{TelaTotal.toFixed(2) || 0} m2</td>
             <td className="RightTable">Cantidad de tela</td>
           </tr>
           <tr>
