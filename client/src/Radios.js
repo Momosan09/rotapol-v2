@@ -1,8 +1,8 @@
 const modelos = [
-  { nombre: 'Americano 1.5 pellizcos', valor: 1.5 },
+  { nombre: 'Americano 1 pellizcos', valor: 1.5 },
   { nombre: 'Americano 2 pellizcos', valor: 2 },
-  { nombre: 'Americano 2.5 pellizcos', valor: 2.5 },
-  { nombre: 'Americano 3 pellizcos', valor: 3 },
+  { nombre: 'Americano 3 pellizcos', valor: 2.5 },
+  { nombre: 'Americano 4 pellizcos', valor: 3 },
   { nombre: 'Plisado', valor: 2 },
   { nombre: 'Presilla', valor: 2 },
   { nombre: 'Vanesa', valor: 2 },

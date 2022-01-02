@@ -10,7 +10,6 @@ const Table = props => {
           paño,
           precioTela,
           cantTela,
-          precTotal,
           } = props;
 Math.ceil(NumPanos)
 TelaTotal =cantTela * valor;
@@ -36,7 +35,7 @@ Total = (TelaTotal * precioTela) + Confeccion;
           </tr>
           <tr>
             <td className="LeftTable LT1">${Confeccion.toFixed(2)||0}</td>
-            <td className="RightTable">Confeccion</td>
+            <td className="RightTable">Confección</td>
           </tr>
           <tr>
             <td className="LeftTable LT0">${Total.toFixed(2) ||""}</td>

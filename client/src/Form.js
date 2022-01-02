@@ -53,7 +53,7 @@ const Form = props => {
         </div>
         <div className="DivForFromStyle">
         <div className="LabelStyleExtern">
-        <label className="LabelStyle" >Precio de confeccion por paño</label>{/* LABEL*****/}
+        <label className="LabelStyle" >Precio de confección por paño</label>{/* LABEL*****/}
         </div>
         <div className="InputTextStyleExtern">
         <p>$</p>
@@ -67,11 +67,6 @@ const Form = props => {
         <div className="InputTextStyleExtern">
         <p>$</p>
         <input placeholder="############" onChange={e => setPrecioTela(e.target.value)} value={precioTela} type="number" min="1" className="TextLeftForm InputTextStyleIntern"/>
-        </div>
-        </div>
-        <div className="DivForFromStyle inside">
-        <div className="LabelStyleExtern">
-        <label className="LabelStyle" >Metodo de pago</label>             {/* LABEL*****/}
         </div>
         </div>
       </form>

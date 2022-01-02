@@ -5,6 +5,7 @@ import Navbar from './Navbar';
 import Left from './Left';
 import Right from './Right';
 import Footer from './Footer';
+import ProgressBar from './ProgressBar';
 
 const App = () => {
 
@@ -45,6 +46,7 @@ const App = () => {
   return (
     <div className="App">
       <Navbar />
+      <ProgressBar />
       <div className="Content">
         <Left
           medida={medida}
