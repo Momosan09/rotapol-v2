@@ -5,7 +5,7 @@ const Step2 = () =>
 
 <>
 <Navbar/>
-<h1>Datos y Extras </h1>
+<h1>Datos y Extras</h1>
 
 
 <Footer/>
