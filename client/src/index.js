@@ -6,6 +6,7 @@ import Middle from './Middle';
 import Admin from './Admin';
 import Contact from './Contact';
 import Detalles from './Detalles';
+import Step2 from './Step2';
 
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Routes, Route } from 'react-router-dom';
@@ -19,6 +20,7 @@ ReactDOM.render(
         <Route path="/admin" element={<Admin />} />
         <Route path="/admin/:id" element={<Detalles />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/step2" element={<Step2 />} />
       </Routes>
     </Router>
   </React.StrictMode>,

@@ -7,6 +7,7 @@ import Right from './Right';
 import Footer from './Footer';
 import ProgressBar from './ProgressBar';
 
+
 const App = () => {
 
   // constantes

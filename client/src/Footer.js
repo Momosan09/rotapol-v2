@@ -1,5 +1,5 @@
 import Form2Comprar from './Form2comprar';
-import { Document, Page } from 'react-pdf'
+/* import { Document, Page } from 'react-pdf' */
 const Footer = props => {
 
   const { hayPresupuesto, modelo, cantTela, precTotal } = props;
