@@ -33,7 +33,7 @@ const Form2comprar = props => {
 
     return (
       <>
-  <form hidden={hayPresupuesto ? false : true} onSubmit={handleSubmit}>
+  <form /* hidden={hayPresupuesto ? false : true}  */onSubmit={handleSubmit}>
     
     <table>
       <tbody>
