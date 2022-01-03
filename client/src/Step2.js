@@ -1,6 +1,7 @@
 import Navbar from './Navbar';
 import Footer from "./Footer"
 import Form2Comprar from './Form2comprar';
+import CheckExtras from './CheckExtras';
 
 
 const Step2 = props =>{
@@ -19,7 +20,7 @@ return(
     precTotal={precTotal}
     />
 
-
+<CheckExtras/>
 <Footer/>
 </>
 );

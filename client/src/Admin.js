@@ -37,7 +37,13 @@ const Admin = () => {
       .catch(err => console.log(err))
   };
 
-  const estilo = { textDecoration: 'line-through', };
+  const estilo = {
+    textDecoration: 'line-through',
+    color:"yellow"
+/*     backgroundColor: "black" */
+
+  }
+;
 
   return (
     <>
