@@ -12,7 +12,7 @@ return(
     <>
 <Navbar/>
 <h1>Datos y Extras</h1>
-
+<h2>a{modelo}</h2>
 <Form2Comprar
     hayPresupuesto={hayPresupuesto}
     modelo={modelo}
