@@ -2,7 +2,7 @@ import axios from 'axios';
 import { useState } from 'react';
 const Form2comprar = props => {
 
-    const { hayPresupuesto, modelo, cantTela, precTotal } = props;
+    const { modelo, cantTela, precTotal } = props;
 
     const [name, setName] = useState('');
     const [lastName, setLastName] = useState('');
@@ -105,7 +105,7 @@ const Form2comprar = props => {
           <td>
         <button className="PurchaseButton"  type="submit" onclick="deactivatefunc()" id="desactivator">Comprar</button> {/* <button type="reset">Reset</button> */}
         <div class="tooltip ">(?)
-  <span class="tooltiptext">El asterisco ("*") marca los campos que deben ser rellenados</span>
+    <span class="tooltiptext">El asterisco ("*") marca los campos que deben ser rellenados</span>
 </div>
           </td>
         </tr>

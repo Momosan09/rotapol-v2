@@ -40,11 +40,10 @@ code {
 .Right {
   width: 50%;
   padding: 1%;
-  display: flex;
+  display: row;
   justify-content: center;
   align-items: center;
   border-left: #3d3d3d 1px solid;
-
 
 }
 /* ToolTip */
@@ -143,6 +142,11 @@ flex-direction: column;
   width:50%;
   padding-left: 10px;
 }
+
+.ButtonNextStepTable{
+  color: #9b1b1b;
+}
+
 .LT0{
   background-color:#616161;
 }

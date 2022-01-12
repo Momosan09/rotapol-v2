@@ -1,3 +1,5 @@
+import axios from 'axios';
+
 let TelaTotal, 
     NumPanos,
     Confeccion,
@@ -6,16 +8,26 @@ let TelaTotal,
 const Table = props => {
 
   const { modelo,
+          medida,
           valor,
           paño,
           precioTela,
           cantTela,
           } = props;
+
+let HayPresupuesto = false;
+
 Math.ceil(NumPanos)
 TelaTotal =cantTela * valor;
 NumPanos = TelaTotal/ 1.5;
 Confeccion = NumPanos /* NumPanos */ * paño; 
 Total = (TelaTotal * precioTela) + Confeccion;
+
+if(medida !== ""  && paño !== "" && precioTela !== "" && modelo !== ""  ){ 
+HayPresupuesto = true
+}
+
+
 
   return (
     <>
@@ -43,6 +55,8 @@ Total = (TelaTotal * precioTela) + Confeccion;
           </tr>
         </tbody>
       </table>
+      <button className="ButtonNextStepTable" hidden={HayPresupuesto ? false : true}>Siguiente paso</button>
+
     </>
 
   );
